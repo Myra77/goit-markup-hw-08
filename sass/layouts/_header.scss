@@ -49,6 +49,7 @@
 .menu-contact .link {
   @include desktop {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -129,6 +130,10 @@
   @include tablet {
     font-size: 12px;
     line-height: 1.17;
+  }
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 

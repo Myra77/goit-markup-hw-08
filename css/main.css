@@ -125,6 +125,12 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    height: 581px;
+  }
+}
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -161,6 +167,11 @@ img {
   line-height: 1.5;
   text-align: center;
   color: var(--title-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
 }
 
 .modal-field {
@@ -226,11 +237,11 @@ img {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline-color: transparent;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  outline-color: transparent;
   resize: none;
   padding: 12px 16px;
   transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -238,6 +249,11 @@ img {
 .modal-comment:focus {
   border: 1px solid var(--accent-color);
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .modal-comment {
+    font-size: 12px;
+  }
 }
 
 .check-text {
@@ -248,6 +264,11 @@ img {
   font-size: 12px;
   line-height: 1.14;
   color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+  }
 }
 
 .check-text span {
@@ -277,6 +298,11 @@ img {
 }
 .policy:focus {
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .policy {
+    font-size: 14px;
+  }
 }
 
 .submit-button {
@@ -353,6 +379,7 @@ img {
 @media screen and (min-width: 1200px) {
   .menu-contact .link {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -442,6 +469,13 @@ img {
 .menu__tel {
     font-size: 12px;
     line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__mail,
+.menu__tel {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -583,7 +617,6 @@ img {
   padding-bottom: 118px;
   background: #2f303a;
   background-image: var(--bg-gradient), url(../images/Hero-bg-mob.jpg);
-  max-width: 480px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -990,6 +1023,11 @@ img {
   font-weight: 700;
   line-height: 1.14;
 }
+@media screen and (min-width: 1200px) {
+  .footer-soc-text {
+    text-align: left;
+  }
+}
 
 .footer-soc-list {
   display: flex;
@@ -1076,6 +1114,25 @@ img {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-input {
+    flex-wrap: wrap;
+  }
+}
+
+.email-input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .email-input-form {
+    flex-direction: row;
+    gap: 12px;
+    align-items: baseline;
+  }
+}
+
 .email-input-text {
   margin-bottom: 20px;
   color: var(--footer-text-color);
@@ -1093,6 +1150,7 @@ img {
 .email-input {
   margin-bottom: 20px;
   width: 100%;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1130,7 +1188,6 @@ img {
 
 .online-button {
   display: inline-flex;
-  align-self: flex-end;
   align-items: center;
   justify-content: center;
   gap: 10px;
